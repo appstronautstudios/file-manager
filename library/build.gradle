@@ -1,14 +1,11 @@
 plugins {
-    id 'com.android.application'
-    id 'org.jetbrains.kotlin.android'
+    id 'com.android.library'
 }
 
 android {
-    namespace 'com.appstronautstudios.library'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.appstronautstudios.library"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -27,16 +24,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    kotlinOptions {
-        jvmTarget = '1.8'
-    }
 }
 
 dependencies {
-
-    implementation 'androidx.core:core-ktx:1.8.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'com.google.android.material:material:1.8.0'
 
     implementation('com.opencsv:opencsv:4.1') {
         exclude group: 'commons-logging', module: 'commons-logging'

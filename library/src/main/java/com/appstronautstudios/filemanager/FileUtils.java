@@ -1,4 +1,4 @@
-package com.appstronautstudios.library;
+package com.appstronautstudios.filemanager;
 
 import android.app.Activity;
 import android.content.Context;
